@@ -1,1 +1,33 @@
-<p>dashboard works!</p>
+<mat-toolbar>
+  <span>Dashboard</span>
+</mat-toolbar>
+<div class="m-3">
+  {{ today | date }}
+  <img src="https://pnp.github.io/sp-dev-fx-controls-react/assets/BarChart.png">
+  <div class="text-center">Next Appointment {{ today | date }}</div>
+
+  <h3>Workout plan</h3>
+  <mat-list>
+    <mat-list-item>
+      <span>M - Leg & lower</span>
+    </mat-list-item>
+    <mat-list-item>
+      <span>T - Back & Tricep</span>
+    </mat-list-item>
+    <mat-list-item>
+      <span>W - Biceps & Shoulder</span>
+    </mat-list-item>
+    <mat-list-item>
+      <span>T - Chest & Core</span>
+    </mat-list-item>
+    <mat-list-item>
+      <span>F - Cardio</span>
+    </mat-list-item>
+  </mat-list>
+
+  <div class="mt-10 mb-5">
+    <div>Progress</div>
+  </div>
+  <mat-progress-bar mode="determinate" [value]="40"></mat-progress-bar>
+
+</div>
