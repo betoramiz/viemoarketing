@@ -53,3 +53,9 @@ mat-sidenav {
   z-index: 2;
   position: relative;
 }
+
+.small {
+  color: gray;
+  font-size: 12px;
+  font-weight: lighter;
+}

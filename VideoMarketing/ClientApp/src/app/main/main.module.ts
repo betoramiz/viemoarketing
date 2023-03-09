@@ -10,6 +10,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatCardModule } from '@angular/material/card';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatTableModule } from '@angular/material/table';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @NgModule({
@@ -26,6 +31,11 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     MatButtonModule,
     MatListModule,
     MatProgressBarModule,
+    MatCardModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatTableModule,
+    MatIconModule
   ]
 })
 export class MainModule { }

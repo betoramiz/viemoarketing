@@ -1,1 +1,64 @@
-<p>appointment works!</p>
+<mat-toolbar>
+  <span>Appointment</span>
+</mat-toolbar>
+
+<div class="m-3">
+  <mat-card class="demo-inline-calendar-card xs:w-full md:w-3/4">
+    <mat-calendar [(selected)]="selected"></mat-calendar>
+  </mat-card>
+
+  <mat-list role="list">
+    <mat-list-item role="listitem">
+      <div class="w-full flex justify-between">
+        <div>
+          <div>9:00 am</div>
+          <div class="small">45 minutes</div>
+        </div>
+        <div>
+          <div class="font-bold">Coach Felipe</div>
+          <div class="small">Cardio Area</div>
+        </div>
+        <div>
+          <button mat-icon-button>
+            <mat-icon>event</mat-icon>
+          </button>
+        </div>
+      </div>
+    </mat-list-item>
+    <mat-list-item role="listitem">
+      <div class="w-full flex justify-between">
+        <div>
+          <div>12:00 pm</div>
+          <div class="small">45 minutes</div>
+        </div>
+        <div>
+          <div class="font-bold">Coach Lucifer</div>
+          <div class="small">Cardio Area</div>
+        </div>
+        <div>
+          <button mat-icon-button>
+            <mat-icon>event</mat-icon>
+          </button>
+        </div>
+      </div>
+    </mat-list-item>
+    <mat-list-item role="listitem">
+      <div class="w-full flex justify-between">
+        <div>
+          <div>3:00 pm</div>
+          <div class="small">45 minutes</div>
+        </div>
+        <div>
+          <div class="font-bold">Coach Felipe</div>
+          <div class="small">Cardio Area</div>
+        </div>
+        <div>
+          <button mat-icon-button>
+            <mat-icon>event</mat-icon>
+          </button>
+        </div>
+      </div>
+    </mat-list-item>
+  </mat-list>
+
+</div>
