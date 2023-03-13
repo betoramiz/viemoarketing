@@ -29,6 +29,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 /*}*/
 /*}*/
 
+.flexExpand {
+  flex: 1 1 auto;
+}
+
 .content {
   padding: 20px 10px 10px 15px;
 }

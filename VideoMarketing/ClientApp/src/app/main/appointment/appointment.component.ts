@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { BookingComponent } from './booking/booking.component';
 
 export interface PeriodicElement {
   name: string;
@@ -30,9 +32,13 @@ export class AppointmentComponent implements OnInit {
   dataSource = ELEMENT_DATA;
 
   selected: Date = new Date();
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
+  }
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(BookingComponent);
   }
 
 }

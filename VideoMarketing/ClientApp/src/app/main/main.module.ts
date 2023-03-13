@@ -15,6 +15,10 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatTableModule } from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
+import { MatInputModule } from '@angular/material/input';
+import { BookingComponent } from './appointment/booking/booking.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
@@ -22,7 +26,9 @@ import { MatIconModule } from '@angular/material/icon';
     DashboardComponent,
     AppointmentComponent,
     ProfileComponent,
-    MainComponent
+    MainComponent,
+    EditProfileComponent,
+    BookingComponent,
   ],
   imports: [
     CommonModule,
@@ -35,7 +41,9 @@ import { MatIconModule } from '@angular/material/icon';
     MatDatepickerModule,
     MatNativeDateModule,
     MatTableModule,
-    MatIconModule
+    MatIconModule,
+    MatInputModule,
+    MatDialogModule
   ]
 })
 export class MainModule { }
