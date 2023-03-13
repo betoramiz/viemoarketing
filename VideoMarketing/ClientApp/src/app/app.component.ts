@@ -7,11 +7,5 @@ import { map, Observable, shareReplay } from 'rxjs';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
-    .pipe(
-      map(result => result.matches),
-      shareReplay()
-    );
-
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor() {}
 }

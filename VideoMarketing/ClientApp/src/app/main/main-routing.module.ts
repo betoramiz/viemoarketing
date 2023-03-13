@@ -3,20 +3,20 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppointmentComponent } from './appointment/appointment.component';
 import { ProfileComponent } from './profile/profile.component';
-import { EditProfileComponent } from './edit-profile/edit-profile.component';
+import { EditProfileComponent } from './profile/edit-profile/edit-profile.component';
 
 const routes: Routes = [
   {
     path: 'dashboard',
-    component: DashboardComponent
+    loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
   },
   {
     path: 'appointment',
-    component: AppointmentComponent
+    loadChildren: () => import('./appointment/appointment.module').then(m => m.AppointmentModule)
   },
   {
     path: 'profile',
-    component: ProfileComponent
+    loadChildren: () => import('./profile/profile.module').then(m => m.ProfileModule)
   },
   {
     path: 'edit-profile',
