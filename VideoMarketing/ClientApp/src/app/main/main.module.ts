@@ -20,6 +20,7 @@ import { MatInputModule } from '@angular/material/input';
 import { BookingComponent } from './appointment/booking/booking.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 
 @NgModule({
@@ -31,21 +32,22 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     EditProfileComponent,
     BookingComponent,
   ],
-  imports: [
-    CommonModule,
-    MainRoutingModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatListModule,
-    MatProgressBarModule,
-    MatCardModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
-    MatTableModule,
-    MatIconModule,
-    MatInputModule,
-    MatDialogModule,
-    MatSidenavModule
-  ]
+    imports: [
+        CommonModule,
+        MainRoutingModule,
+        MatToolbarModule,
+        MatButtonModule,
+        MatListModule,
+        MatProgressBarModule,
+        MatCardModule,
+        MatDatepickerModule,
+        MatNativeDateModule,
+        MatTableModule,
+        MatIconModule,
+        MatInputModule,
+        MatDialogModule,
+        MatSidenavModule,
+        MatExpansionModule
+    ]
 })
 export class MainModule { }

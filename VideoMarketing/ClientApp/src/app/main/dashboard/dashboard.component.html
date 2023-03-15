@@ -14,30 +14,86 @@
       <mat-card-title>Workout plan</mat-card-title>
     </mat-card-header>
     <mat-card-content>
-      <mat-list>
-        <mat-list-item>
-          <span>M - Leg & lower</span>
-        </mat-list-item>
-        <mat-list-item>
-          <span>T - Back & Tricep</span>
-        </mat-list-item>
-        <mat-list-item>
-          <span>W - Biceps & Shoulder</span>
-        </mat-list-item>
-        <mat-list-item>
-          <span>T - Chest & Core</span>
-        </mat-list-item>
-        <mat-list-item>
-          <span>F - Cardio</span>
-        </mat-list-item>
-      </mat-list>
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Monday
+            </mat-panel-title>
+            <mat-panel-description>
+              Leg & lower
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>This is the primary content of the panel.</p>
+        </mat-expansion-panel>
 
-      <div class="mt-10">
-        <div>Progress</div>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Tuesday
+            </mat-panel-title>
+            <mat-panel-description>
+              Back & Tricep
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>This is the primary content of the panel.</p>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Wednesday
+            </mat-panel-title>
+            <mat-panel-description>
+              Biceps & Shoulder
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>This is the primary content of the panel.</p>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Thursday
+            </mat-panel-title>
+            <mat-panel-description>
+              Chest & Core
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>This is the primary content of the panel.</p>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Friday
+            </mat-panel-title>
+            <mat-panel-description>
+              Shoulder
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>This is the primary content of the panel.</p>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Saturday
+            </mat-panel-title>
+            <mat-panel-description>
+              Leg & lower
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>This is the primary content of the panel.</p>
+        </mat-expansion-panel>
+      </mat-accordion>
+
+      <div class="mt-10 mb-5">
+        <div>Progress: Day {{ numberOfDay }} of 7</div>
       </div>
+      <mat-progress-bar mode="determinate" color="accent" [value]="progress"></mat-progress-bar>
     </mat-card-content>
   </mat-card>
 
-  <mat-progress-bar mode="determinate" [value]="40"></mat-progress-bar>
 
 </div>

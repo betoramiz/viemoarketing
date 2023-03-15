@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class DashboardComponent implements OnInit {
 
   today:Date = new Date();
+  numberOfDay = this.today.getDay();
+  progress = (this.numberOfDay*100)/7;
 
   constructor() { }
 
