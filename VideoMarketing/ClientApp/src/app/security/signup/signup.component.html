@@ -1,0 +1,35 @@
+<mat-card class="w-full md:w-3/4 lg:w-2/5">
+  <mat-card-header>
+    <mat-card-title class="text-white">My Fitness</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="text-center iconApp mt-3 mb-3">
+      <fa-icon [icon]="faMedal"></fa-icon>
+    </div>
+
+    <button class="w-full mb-3" mat-raised-button color="primary">
+      <mat-icon matPrefix>facebook</mat-icon>
+      Connect with Facebook
+    </button>
+
+    <button class="w-full mb-3" mat-raised-button color="primary">
+      <fa-icon [icon]="faTwitter"></fa-icon>
+      Connect with Twitter
+    </button>
+
+    <button class="w-full mb-3" mat-raised-button color="primary">
+      <fa-icon [icon]="faGoogle"></fa-icon>
+      Connect with Google
+    </button>
+
+    <button class="w-full mb-3" mat-raised-button color="accent" routerLink="/security/login">
+      <mat-icon>email</mat-icon>
+      Signup with email
+    </button>
+
+    <button class="w-full mb-3" mat-raised-button routerLink="/security/create">
+      Create account
+    </button>
+
+  </mat-card-content>
+</mat-card>
