@@ -1,0 +1,41 @@
+.navbar {
+  background-color: #7b1fa2;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 58px;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  mat-toolbar > button {
+    display: none;
+  }
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px 16px;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: lighter;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}

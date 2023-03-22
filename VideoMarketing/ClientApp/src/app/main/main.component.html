@@ -37,5 +37,19 @@
   </mat-sidenav>
   <mat-sidenav-content>
     <router-outlet></router-outlet>
+    <div class="navbar flex justify-between">
+      <a routerLink="/dashboard">
+        <mat-icon>home</mat-icon>
+        <div>Home</div>
+      </a>
+      <a routerLink="/appointment">
+        <mat-icon>today</mat-icon>
+        <div>Appointment</div>
+      </a>
+      <a routerLink="/profile">
+        <mat-icon>person</mat-icon>
+        <div>Profile</div>
+      </a>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
